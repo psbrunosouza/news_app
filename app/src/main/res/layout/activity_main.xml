@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imagem_artigo"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:contentDescription="Manipulação de imagens"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/data_artigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:gravity="center"
+            android:text="@string/data_artigo"
+            android:textColor="@color/tituloCor"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/titulo_artigo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/titulo_artigo"
+            app:layout_constraintTop_toTopOf="@+id/titulo_artigo"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/titulo_artigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/titulo_artigo"
+            android:textColor="@color/tituloCor"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagem_artigo" />
+
+        <TextView
+            android:id="@+id/artigo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="18dp"
+            android:paddingEnd="16dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie egestas felis, a condimentum orci lacinia at. Quisque orci nisi, rhoncus vitae feugiat a, dapibus in tortor. Proin at ipsum ex. Phasellus volutpat ligula ac facilisis dapibus. Suspendisse at felis gravida, consectetur ex scelerisque, dignissim ex. Nunc purus dui, luctus et facilisis vel, gravida sit amet elit. Vestibulum faucibus egestas est, ac hendrerit nisi vehicula in. Suspendisse potenti. Integer pretium ex ipsum, in varius turpis ornare quis. Mauris semper purus nibh, sed euismod libero ultrices sed. Donec et euismod lacus. Phasellus elementum, tellus euismod aliquet condimentum, dolor dui rhoncus leo, quis ultricies nibh libero id justo. Etiam elementum metus nibh, nec dapibus purus aliquet egestas. Quisque eget dui arcu."
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo_artigo" />
+
+        <Button
+            android:id="@+id/bt_avancar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:text="Avançar"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/artigo" />
+
+        <Button
+            android:id="@+id/bt_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Voltar"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bt_avancar"
+            app:layout_constraintEnd_toStartOf="@+id/bt_avancar"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bt_avancar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="233dp" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
